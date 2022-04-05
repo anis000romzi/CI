@@ -3,10 +3,15 @@ class Contoh1 extends CI_Controller
 {
     public function index()
     {
-        echo "<h1>Perkenalkan</h1>";
-        echo"Nama saya Muhammad Anis Romzi
-            Saya tingga di daerah Jalan Talang
-            kegiatan yang saya sukai adalah
-            menonton film";
+        echo "Selamat Datang.. selamat belajar Web Programming";
+    }
+
+    public function penjumlahan($n1, $n2)
+    {
+        $this->load->model('Model1');
+        $data['nilai1'] = $n1;
+        $data['nilai2'] = $n2;
+        $data['hasil'] = $this->Model1->jumlah($n1, $n2);
+        $this->load->view('View1', $data);
     }
 }
