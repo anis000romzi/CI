@@ -52,6 +52,7 @@
                 </tr>
             </table>
         </form>
+        <?= validation_errors(); ?>
     </center>
 </body>
 
