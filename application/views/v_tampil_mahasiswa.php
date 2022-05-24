@@ -9,7 +9,7 @@
     <center>
         <h1>Membuat Data Mahasiswa</h1>
     </center>
-    <center><?php echo anchor('mahasiswa/tambah', 'Tambah Data'); ?></center>
+    <center><?= anchor('mahasiswa/tambah', 'Tambah Data'); ?></center>
     <table style="margin:20px auto;" border="1">
         <tr>
             <th>No</th>
@@ -23,17 +23,17 @@
         </tr>
         <?php
         $no = 1;
-        foreach ($mahasiswa as $u) {
+        foreach ($mahasiswa as $u) :
         ?>
             <tr>
-                <td><?php echo $no++ ?></td>
-                <td><?php echo $u->nim ?></td>
-                <td><?php echo $u->nama ?></td>
-                <td><?php echo $u->kelas ?></td>
-                <td><?php echo $u->tmp_lahir ?>, <?php echo $u->tgl_lahir ?></td>
-                <td><?php echo $u->alamat ?></td>
-                <td><?php echo $u->jk ?></td>
-                <td><?php echo $u->agama ?></td>
+                <td><?= $no++ ?></td>
+                <td><?= $u->nim ?></td>
+                <td><?= $u->nama ?></td>
+                <td><?= $u->kelas ?></td>
+                <td><?= $u->tmp_lahir ?>, <?= $u->tgl_lahir ?></td>
+                <td><?= $u->alamat ?></td>
+                <td><?= $u->jk ?></td>
+                <td><?= $u->agama ?></td>
             </tr>
-        <?php } ?>
+        <?php endforeach; ?>
     </table>
