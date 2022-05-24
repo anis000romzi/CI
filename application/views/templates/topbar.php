@@ -21,18 +21,13 @@ topbar mb-4 static-top shadow">
                         <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image']; ?>">
                     </a>
                     <!-- Dropdown - User Information -->
-                    <div class="dropdown-menu dropdown-menu-right
-shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="<?=
-                                                        base_url('user'); ?>">
-                            91
-                            <i class="fas fa-user fa-sm fa-fw mr-2
-text-gray-400"></i>
+                    <div class="dropdown-menu dropdown-menu-rightshadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="<?= base_url('user'); ?>">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                             Profile Saya
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?=
-                                                        base_url('autentifikasi/logout'); ?>" data-toggle="modal" datatarget="#logoutModal">
+                        <a class="dropdown-item" href="<?= base_url('autentifikasi/logout'); ?>" data-toggle="modal" datatarget="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fafw mr-2 text-gray-400"></i>
                             Logout
                         </a>
